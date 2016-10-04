@@ -1,0 +1,60 @@
+/* app css stylesheet */
+
+html, body {
+  overflow: hidden;
+  margin: 0;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#container {
+  position: absolute;
+  width: 320px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -160px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@font-face {
+  font-family: Rockfire-regular;
+  src: url('components/Rockfire-Regular.otf');
+}
+h1 {
+  font-family: Rockfire-regular;
+  font-size: 50px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin: 12px 0;
+  left: 4px;
+  font-weight:initial;
+}
+h2 {
+  color: #999;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: .12em;
+  margin-bottom: 30px;
+  left: 3px;
+}
+p {
+  color: #999;
+  font-size: 14px;
+  line-height: 2em;
+  margin: 0;
+  letter-spacing: 2px;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  transition: color .2s ease;
+}
