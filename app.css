@@ -1,7 +1,7 @@
 /* app css stylesheet */
 
 html, body {
-  overflow: hidden;
+  /*overflow: hidden;*/
   margin: 0;
 }
 canvas {
