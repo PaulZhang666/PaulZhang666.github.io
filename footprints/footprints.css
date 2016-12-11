@@ -45,6 +45,7 @@
 .title{
     transition-property: color;
     transition-duration: 1.5s;
+    color: white;
 }
 .title.up{
     color: rgba(8, 8, 8, 0.66);
