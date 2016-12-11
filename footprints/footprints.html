@@ -1,19 +1,64 @@
 <div ng-controller="footprintCtrl" style="height: 100%">
     <header class="header" style="text-align: center; height: 100%">
-        <div class="header-background" style="z-index: -1"></div>
-        <div class="header-background-2"></div>
-        <div class="title" style="position: absolute; top: 40%; width: 100%;">
-            <h1>
+        <div class="header-background_img" style="z-index: -1"></div>
+        <div class="header-background_opa"></div>
+        <div class="title" style="position: absolute; top: 32%; width: 100%;">
+            <h1 style="font-size: 55px">
                 Hi, I'm Paul Zhang.
             </h1>
+            <div class="subtitle">Welcome to my world.</div>
         </div>
-        <div style="bottom: 50px; position: fixed; color: white; width: 100%">
+        <div style="bottom: 50px; position: fixed; color: white; width: 100%" ng-show="showStartButton">
             <div style="text-align: center; cursor: pointer" ng-click="showUp()">click to start</div>
             <br>
             <i class="fa fa-arrow-down fa-2x" data-info="click to start" style="cursor: pointer" ng-click="showUp()"></i>
         </div>
     </header>
-    <!--section id="intro" class="content">
-        <div>{{a}}</div>
-    </section-->
+
+    <div class="content">
+        <div class="c_text">
+            After four years rememberable study in Beihang <i class="fa fa-rocket"></i> University, I came to USA keep achieving my dream.
+            Now I'm 23, full of energy and curiosity, pursuing my master degree in Northeastern University.
+        </div>
+        <br>
+        <div class="c_text"><h1 style="display: inline">Coding</h1><div class='heart animated css' style="display: inline-block"></div></div>
+        <div class="c_text">
+            I have great passion for all kinds of things related with Computer technology, and I always want to know how the code runs line by line.
+            Code output makes me really happy. I wish to beautify the world a little with my brain and ten fingers.
+        </div>
+        <br>
+        <div style="text-align: center" class="c_text">
+            <img src="../app/components/image/code.jpg" style="width: 48%; border-radius: 10px; display: inline; margin-right: 2%">
+            <img src="../app/components/image/reading.jpg" style="width: 48%; border-radius: 10px; display: inline">
+        </div>
+        <br>
+        <div class="c_text"><h1>Travel</h1></div>
+        <div class="c_text">
+            I like trains, I like chatting with new friends, I like photographing the same Moon standing on different places on the Earth.
+            Traveling around China has been my goal for a long time, and I'm realizing it step by step.
+        </div>
+        <br>
+        <div class="c_text">
+            <div id="chinaChart" class="chart"></div>
+        </div>
+        <div style="text-align: center" class="c_text">
+            <img src="../app/components/image/travel_0.jpg" style="width: 48%; border-radius: 10px; display: inline; margin-right: 2%">
+            <img src="../app/components/image/travel_1.jpg" style="width: 48%; border-radius: 10px; display: inline">
+        </div>
+        <br>
+        <div class="c_text"><h1>Soccer</h1></div>
+        <div class="c_text">
+            I have been watching and playing soccer for more than 10 years, I like the feeling working as a member of a team.
+            I will keep running on grass until I'm too old to move.
+        </div>
+        <br>
+        <div style="text-align: center" class="c_text">
+            <img src="../app/components/image/soccer_0.jpg" style="width: 48%; border-radius: 10px; display: inline; margin-right: 2%">
+            <img src="../app/components/image/soccer_1.jpg" style="width: 48%; border-radius: 10px; display: inline">
+        </div>
+        <br>
+        <div class="c_text"><h1>To be continued...HaHa...</h1></div>
+        <br>
+        <br>
+    </div>
 </div>
