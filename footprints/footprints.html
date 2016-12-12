@@ -1,4 +1,22 @@
 <div ng-controller="footprintCtrl" style="height: 100%">
+    <div id="myModal" class="modal fade" role="dialog" style="top: 15%">
+        <div class="modal-dialog" style="width: 80%">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 style="text-align: center">{{result_text}}</h1>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center; font-family: Comic Sans MS; font-size: 25px;">{{result_score}}</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <header class="header" style="text-align: center; height: 100%">
         <div class="header-background_img" style="z-index: -1"></div>
         <div class="header-background_opa"></div>
@@ -24,7 +42,7 @@
         <div class="c_text"><h1 style="display: inline">Coding</h1><div class='heart animated css' style="display: inline-block"></div></div>
         <div class="c_text">
             I have great passion for all kinds of things related with Computer technology, and I always want to know how the code runs line by line.
-            Code output makes me really happy. I wish to beautify the world a little with my brain and ten fingers.
+            Code output makes me really happy. Now I'm familiar with HTML/JS, C, Python, and I'm working on JAVA. I wish to beautify the world a little with my brain and ten fingers.
         </div>
         <br>
         <div style="text-align: center" class="c_text">
@@ -57,6 +75,84 @@
             <img src="../components/image/soccer_1.jpg" style="width: 48%; border-radius: 10px; display: inline">
         </div>
         <br>
+        <div class="c_text"><h1>How Well Do You Know Me Quiz</h1></div>
+        <br>
+        <div class="c_text">
+            <div class="question">1. Which pet is my favorite?</div>
+            <label style="margin-top: 5px; cursor: pointer">
+                &nbsp;<input type="radio" name="Q_0" value="-1" ng-model="Q_0"> Fish
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_0" value="0" ng-model="Q_0"> Dog
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_0" value="1" ng-model="Q_0"> Cat
+            </label>
+        </div><br>
+        <div class="c_text">
+            <div class="question">2. Which team?</div>
+            <label style="margin-top: 5px; cursor: pointer">
+                &nbsp;<input type="radio" name="Q_1" value="1" ng-model="Q_1"> Arsenal
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_1" value="-1" ng-model="Q_1"> Real Madrid
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_1" value="0" ng-model="Q_1"> Inter Milan
+            </label>
+        </div><br>
+        <div class="c_text">
+            <div class="question">3. Who is my favorite singer?</div>
+            <label style="margin-top: 5px; cursor: pointer">
+                &nbsp;<input type="radio" name="Q_2" value="-1" ng-model="Q_2"> Taylor Swift
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_2" value="1" ng-model="Q_2"> Stefanie Sun
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_2" value="0" ng-model="Q_2"> Linkin Park
+            </label>
+        </div><br>
+        <div class="c_text">
+            <div class="question">4. Which movie?</div>
+            <label style="margin-top: 5px; cursor: pointer">
+                &nbsp;<input type="radio" name="Q_3" value="-1" ng-model="Q_3"> Transformers
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_3" value="1" ng-model="Q_3"> Pirates of the Caribbean
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_3" value="0" ng-model="Q_3"> The Fast and the Furious
+            </label>
+        </div><br>
+        <div class="c_text">
+            <div class="question">5. Bad habit of mine?</div>
+            <label style="margin-top: 5px; cursor: pointer">
+                &nbsp;<input type="radio" name="Q_4" value="-1" ng-model="Q_4"> Stay up late
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_4" value="0" ng-model="Q_4"> Not brushing my teeth
+            </label>
+            <br>
+            <label style="cursor: pointer">
+                &nbsp;<input type="radio" name="Q_4" value="1" ng-model="Q_4"> Chewing my nails
+            </label>
+        </div>
+        <br>
+        <div class="c_text" style="text-align: center">
+            <button class="btn btn-default" ng-click="checkScore()" style="font-size: large" data-toggle="modal" data-target="#myModal">Check!</button>
+        </div>
+        <br>
+
         <div class="c_text"><h1>To be continued...HaHa...</h1></div>
         <br>
         <br>

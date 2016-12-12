@@ -31,6 +31,51 @@ function footprintCtrl($scope){
         $scope.showStartButton = false;
     };
 
+    $scope.checkScore = function(){
+        var result = 0;
+        if($scope.Q_0 == 1){
+            result += parseInt($scope.Q_0);
+        }
+        if($scope.Q_1 == 1){
+            result += parseInt($scope.Q_1);
+        }
+        if($scope.Q_2 == 1){
+            result += parseInt($scope.Q_2);
+        }
+        if($scope.Q_3 == 1){
+            result += parseInt($scope.Q_3);
+        }
+        if($scope.Q_4 == 1){
+            result += parseInt($scope.Q_4);
+        }
+        switch (result){
+            case 0:
+                $scope.result_text = "You know nothing!";
+                $scope.result_score = "You got 0/5.";
+                break;
+            case 1:
+                $scope.result_text = "Maybe next time!";
+                $scope.result_score = "You got 1/5.";
+                break;
+            case 2:
+                $scope.result_text = "You know something!";
+                $scope.result_score = "You got 2/5.";
+                break;
+            case 3:
+                $scope.result_text = "You are my friend!";
+                $scope.result_score = "You got 3/5.";
+                break;
+            case 4:
+                $scope.result_text = "Good game, well played!";
+                $scope.result_score = "You got 4/5.";
+                break;
+            case 5:
+                $scope.result_text = "You know everything!";
+                $scope.result_score = "You got 5/5.";
+                break;
+        }
+    };
+
     window.onscroll = function(){
         $scope.showUp();
         $scope.$apply();
