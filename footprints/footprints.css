@@ -53,15 +53,15 @@
 .subtitle{
     opacity: 0;
     transition-property: transform, opacity;
-    left: 25%;
-    transform: translateX(25%);
+    width: 66%;
+    transform: translateX(50%);
     transition-duration: 1.5s;
     font-family: Rockfire-regular;
     font-size: 40px;
 }
 .subtitle.up{
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(25%);
 }
 .content{
     opacity: 1;
